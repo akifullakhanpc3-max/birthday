@@ -63,7 +63,7 @@ button:hover {
     align-items: center;
     color: white;
 
-    background-color: rgba(255 , 255, 255, 0.2);
+    background-color: rgba(255 , 255, 255, 0.09);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);  
     border-radius: 1rem;
@@ -91,13 +91,21 @@ button:hover {
     max-height: 100%;
     border-radius: 1rem;
     object-fit: contain;
-    animation: opacityFade 4s ease infinite;
+    animation: loading 1.5s ease-in-out;
     transition: transform 0.5s ease;
 }
+@keyframes loading {
+    0%
+    { 
+        transform: scale(1);
+        filter: blur(10px);
+    }
+    50% { transform: scale(1.15); }
 
-.photo-container:hover img {
-    transform: scale(1.07);
 }
+/* .photo-container:hover img {
+    transform: scale(1.07);
+} */
 
 /* TYPEWRITER H1 */
 .front h1 {
