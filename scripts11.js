@@ -114,3 +114,7 @@ document.getElementById("buttonme").onclick = function() {
     inside.style.display = "flex";
     document.getElementById("buttonme").style.display = "none";
 }
+const insta = document.getElementById("insta");
+insta.onclick = function() {
+    window.open("https://www.instagram.com/reel/DT4Z941gSVL/?igsh=NjVqaGRhZ2h1ZHdu", "_blank");
+}
